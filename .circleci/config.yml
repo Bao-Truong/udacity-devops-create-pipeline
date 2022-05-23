@@ -2,7 +2,7 @@ version: "2.1"
 
 defaults: &defaults
   docker:
-    - image: circleci/node:13.8.0
+    - image: circleci/node
 
 jobs:
   build:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - run:
-          command: |
+          command: |          
             npm run lint
 
   test:
