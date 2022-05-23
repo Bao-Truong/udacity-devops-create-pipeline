@@ -33,7 +33,7 @@ jobs:
       - checkout
       - run:
           command: |
-            npm run audit
+            npm audit
 
 workflows:
   build-npm:
